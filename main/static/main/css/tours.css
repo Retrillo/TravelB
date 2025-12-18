@@ -61,7 +61,7 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 1;
-        color: white;
+    color: white;
 
 }
 
@@ -247,7 +247,8 @@ body {
 
 .infographic {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Исправлено с 4 на 3 колонки */
+    grid-template-columns: repeat(3, 1fr);
+    /* Исправлено с 4 на 3 колонки */
     gap: 30px;
     margin: 40px 0;
     padding: 30px;
@@ -454,7 +455,8 @@ body {
     width: 100%;
 }
 
-.content-section ul, .content-section ol {
+.content-section ul,
+.content-section ol {
     margin: 20px 0;
     padding-left: 25px;
     width: 100%;

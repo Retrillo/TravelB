@@ -4,11 +4,13 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 class UserRegisterForm(UserCreationForm):
-    email = forms.EmailField(required=True, help_text="Обязательное поле. Укажите действующий Email.")
+    email = forms.EmailField(
+        required=True, help_text="Обязательное поле. Укажите действующий Email."
+    )
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        fields = ["username", "email", "password1", "password2"]
 
 
 class UserUpdateForm(forms.ModelForm):
@@ -16,12 +18,12 @@ class UserUpdateForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email']
+        fields = ["username", "email"]
         labels = {
-            'username': 'Никнейм',
+            "username": "Никнейм",
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['username'].disabled = True
-        self.fields['username'].help_text = "Никнейм нельзя изменить"
+        self.fields["username"].disabled = True
+        self.fields["username"].help_text = "Никнейм нельзя изменить"

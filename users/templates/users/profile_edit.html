@@ -1,45 +1,43 @@
-{% extends "main/layout.html" %}
-{% block title %}Редактирование профиля | TravelB{% endblock %}
+{% extends 'main/layout.html' %}
+{% block title %}
+  Редактирование профиля | TravelB
+{% endblock %}
 
 {% block content %}
-<div class="edit-profile-container">
+  <div class="edit-profile-container">
     <div class="edit-profile-card">
-        <h2 class="edit-title">Редактирование профиля</h2>
+      <h2 class="edit-title">Редактирование профиля</h2>
 
-        <form method="POST" class="edit-form">
-            {% csrf_token %}
+      <form method="POST" class="edit-form">
+        {% csrf_token %}
 
-            <div class="form-section">
-                <h3 class="section-title">👤 Основные данные</h3>
+        <div class="form-section">
+          <h3 class="section-title">👤 Основные данные</h3>
 
-                <div class="readonly-field">
-                    <label>Никнейм:</label>
-                    <div class="readonly-value">{{ user.username }}</div>
-                    <small class="field-hint">Никнейм нельзя изменить</small>
-                </div>
+          <div class="readonly-field">
+            <label>Никнейм:</label>
+            <div class="readonly-value">{{ user.username }}</div>
+            <small class="field-hint">Никнейм нельзя изменить</small>
+          </div>
 
-                <p>
-                    <label for="{{ user_form.email.id_for_label }}">Email:</label>
-                    {{ user_form.email }}
-                    {% if user_form.email.errors %}
-                        <div class="error">{{ user_form.email.errors }}</div>
-                    {% endif %}
-                </p>
-            </div>
+          <p>
+            <label for="{{ user_form.email.id_for_label }}">Email:</label>
+            {{ user_form.email }}
+            {% if user_form.email.errors %}
+              <div class="error">{{ user_form.email.errors }}</div>
+            {% endif %}
+          </p>
+        </div>
 
-            <div class="divider"></div>
+        <div class="divider"></div>
 
-            <div class="form-section">
-                <h3 class="section-title">🔒 Смена пароля</h3>
-                {{ password_form.as_p }}
-            </div>
+        <div class="form-section">
+          <h3 class="section-title">🔒 Смена пароля</h3>
+          {{ password_form.as_p }}
+        </div>
 
-            <button type="submit" class="save-btn">
-                💾 Сохранить изменения
-            </button>
-        </form>
+        <button type="submit" class="save-btn">💾 Сохранить изменения</button>
+      </form>
     </div>
-</div>
-
-
+  </div>
 {% endblock %}

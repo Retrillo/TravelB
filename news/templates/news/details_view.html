@@ -1,46 +1,37 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-<div class="article-container">
+  <div class="article-container">
     <div class="article-header">
-        <div class="article-meta">
-            <span class="article-date">
-                {{ article.date|date:"d.m.Y" }}
-            </span>
-        </div>
-        <h1 class="article-title">{{ article.title }}</h1>
+      <div class="article-meta">
+        <span class="article-date">{{ article.date|date:'d.m.Y' }}</span>
+      </div>
+      <h1 class="article-title">{{ article.title }}</h1>
     </div>
 
     <div class="article-content">
-        <div class="article-text">
-            {{ article.full_text|linebreaks }}
-        </div>
+      <div class="article-text">{{ article.full_text|linebreaks }}</div>
 
-        <div class="article-navigation">
-            <a href="{% url 'news_home' %}" class="btn-back">
-                ← Вернуться к списку статей
-            </a>
-        </div>
+      <div class="article-navigation">
+        <a href="{% url 'news_home' %}" class="btn-back">← Вернуться к списку статей</a>
+      </div>
     </div>
 
     {% if latest_articles %}
-    <div class="related-articles">
+      <div class="related-articles">
         <h3 class="related-title">Читайте также</h3>
         <div class="related-list">
-            {% for related_article in latest_articles %}
+          {% for related_article in latest_articles %}
             <div class="related-item">
-                <div class="related-content">
-                    <h4>{{ related_article.title }}</h4>
-                    <p class="related-date">{{ related_article.date|date:"d.m.Y" }}</p>
-                    <a href="{% url 'news-detail' related_article.id %}" class="read-more">
-                        Читать статью →
-                    </a>
-                </div>
+              <div class="related-content">
+                <h4>{{ related_article.title }}</h4>
+                <p class="related-date">{{ related_article.date|date:'d.m.Y' }}</p>
+                <a href="{% url 'news-detail' related_article.id %}" class="read-more">Читать статью →</a>
+              </div>
             </div>
-            {% endfor %}
+          {% endfor %}
         </div>
-    </div>
+      </div>
     {% endif %}
-</div>
-
+  </div>
 {% endblock %}

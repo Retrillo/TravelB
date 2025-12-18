@@ -1,69 +1,69 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-
-
-<div class="success-page">
+  <div class="success-page">
     <div class="success-message">
-        <div class="success-icon">✅</div>
+      <div class="success-icon">✅</div>
 
-        <h1>Сообщение успешно отправлено!</h1>
+      <h1>Сообщение успешно отправлено!</h1>
 
-        <p>Спасибо за ваше обращение. Мы получили ваше сообщение и свяжемся с вами в ближайшее время.</p>
+      <p>Спасибо за ваше обращение. Мы получили ваше сообщение и свяжемся с вами в ближайшее время.</p>
 
-        <div class="success-details">
-            <h3>Информация о вашем обращении</h3>
+      <div class="success-details">
+        <h3>Информация о вашем обращении</h3>
 
-            {% if request.session.feedback_data %}
-            <div class="detail-item">
-                <span class="detail-label">Имя:</span>
-                <span class="detail-value">{{ request.session.feedback_data.name }}</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Email:</span>
-                <span class="detail-value">{{ request.session.feedback_data.email }}</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Тема:</span>
-                <span class="detail-value">{{ request.session.feedback_data.subject }}</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Категория:</span>
-                <span class="detail-value">
-                    {% if request.session.feedback_data.category == 'question' %}Вопрос
-                    {% elif request.session.feedback_data.category == 'suggestion' %}Предложение
-                    {% elif request.session.feedback_data.category == 'complaint' %}Жалоба
-                    {% elif request.session.feedback_data.category == 'cooperation' %}Сотрудничество
-                    {% else %}Другое{% endif %}
-                </span>
-            </div>
-            {% else %}
-            <p style="text-align: center; color: #666; padding: 20px;">
-                Информация о вашем обращении была сохранена в нашей системе.
-            </p>
-            {% endif %}
-        </div>
+        {% if request.session.feedback_data %}
+          <div class="detail-item">
+            <span class="detail-label">Имя:</span>
+            <span class="detail-value">{{ request.session.feedback_data.name }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Email:</span>
+            <span class="detail-value">{{ request.session.feedback_data.email }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Тема:</span>
+            <span class="detail-value">{{ request.session.feedback_data.subject }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Категория:</span>
+            <span class="detail-value">
+              {% if request.session.feedback_data.category == 'question' %}
+                Вопрос
+              {% elif request.session.feedback_data.category == 'suggestion' %}
+                Предложение
+              {% elif request.session.feedback_data.category == 'complaint' %}
+                Жалоба
+              {% elif request.session.feedback_data.category == 'cooperation' %}
+                Сотрудничество
+              {% else %}
+                Другое
+              {% endif %}
+            </span>
+          </div>
+        {% else %}
+          <p style="text-align: center; color: #666; padding: 20px;">Информация о вашем обращении была сохранена в нашей системе.</p>
+        {% endif %}
+      </div>
 
-        <div class="action-buttons">
-            <a href="{% url 'home' %}" class="btn btn-primary">
-                <span>🏠</span> На главную
-            </a>
-            <a href="{% url 'feedback' %}" class="btn btn-secondary">
-                <span>📨</span> Отправить ещё
-            </a>
-        </div>
+      <div class="action-buttons">
+        <a href="{% url 'home' %}" class="btn btn-primary"><span>🏠</span> На главную</a>
+        <a href="{% url 'feedback' %}" class="btn btn-secondary"><span>📨</span> Отправить ещё</a>
+      </div>
     </div>
 
     <div style="margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #f8f9fa, #e6f7ff); border-radius: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">
-        <h3 style="color: #1a2980; margin-bottom: 15px; font-size: 18px;">Что дальше?</h3>
-        <ul style="text-align: left; color: #666; line-height: 1.6; padding-left: 20px;">
-            <li>Наш специалист рассмотрит ваше обращение в течение <strong>24 часов</strong></li>
-            <li>Ответ будет отправлен на указанный email адрес</li>
-            <li>Для срочных вопросов звоните: <strong>+7 (495) 123-45-67</strong></li>
-            <li>Следите за обновлениями в нашем блоге и социальных сетях</li>
-        </ul>
+      <h3 style="color: #1a2980; margin-bottom: 15px; font-size: 18px;">Что дальше?</h3>
+      <ul style="text-align: left; color: #666; line-height: 1.6; padding-left: 20px;">
+        <li>
+          Наш специалист рассмотрит ваше обращение в течение <strong>24 часов</strong>
+        </li>
+        <li>Ответ будет отправлен на указанный email адрес</li>
+        <li>
+          Для срочных вопросов звоните: <strong>+7 (495) 123-45-67</strong>
+        </li>
+        <li>Следите за обновлениями в нашем блоге и социальных сетях</li>
+      </ul>
     </div>
-</div>
-
-
+  </div>
 {% endblock %}

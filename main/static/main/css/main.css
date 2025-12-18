@@ -7,8 +7,8 @@
 
 .hero-section {
     background: linear-gradient(135deg,
-    rgba(248, 249, 255, 0.95) 0%,
-    rgba(238, 242, 255, 0.9) 100%);
+            rgba(248, 249, 255, 0.95) 0%,
+            rgba(238, 242, 255, 0.9) 100%);
     border-radius: 25px;
     padding: 60px;
     margin: 30px auto;
@@ -102,10 +102,21 @@
     animation: float 3s ease-in-out infinite;
 }
 
-.travel-icons .icon:nth-child(2) { animation-delay: 0.5s; }
-.travel-icons .icon:nth-child(3) { animation-delay: 1s; }
-.travel-icons .icon:nth-child(4) { animation-delay: 1.5s; }
-.travel-icons .icon:nth-child(5) { animation-delay: 2s; }
+.travel-icons .icon:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.travel-icons .icon:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.travel-icons .icon:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.travel-icons .icon:nth-child(5) {
+    animation-delay: 2s;
+}
 
 
 .quote-block {
@@ -296,9 +307,12 @@
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -358,6 +372,7 @@
 }
 
 @media (max-width: 480px) {
+
     .hero-section,
     .quote-block,
     .poetic-section,

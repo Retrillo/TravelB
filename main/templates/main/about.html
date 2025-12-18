@@ -1,90 +1,89 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}О нас - TravelB{% endblock %}
+{% block title %}
+  О нас - TravelB
+{% endblock %}
 
 {% block extra_css %}
-    <!-- Дополнительные стили, если нужны -->
+
 {% endblock %}
 
 {% block content %}
-<div class="main-content container">
-    <!-- Заголовок страницы -->
+  <div class="main-content container">
     <header class="page-header">
-        <h1>О нас</h1>
-        <p>Узнайте больше о команде TravelB и наших ценностях</p>
+      <h1>О нас</h1>
+      <p>Узнайте больше о команде TravelB и наших ценностях</p>
     </header>
 
-    <!-- Основной контент в двух колонках -->
     <div class="about-content">
-        <!-- Левая колонка: О нас -->
-        <div class="about-section">
-            <h2 class="section-title">О нас</h2>
-            <p class="about-text">
-                <span class="highlight">TravelB</span> - это сообщество путешественников, созданное для обмена опытом, знаниями и вдохновением. Мы верим, что каждый заслуживает незабываемых путешествий, независимо от бюджета или опыта.
-            </p>
-            <p class="about-text">
-                Наша миссия - сделать планирование путешествий простым, доступным и увлекательным. Мы собираем проверенные лайфхаки, полезные советы и актуальную информацию от опытных путешественников со всего мира.
-            </p>
-            <p class="about-text">
-                С <span class="highlight">2018 года</span> мы помогли тысячам людей открыть для себя новые направления, сэкономить на путешествиях и получить максимальное удовольствие от каждого похода, поездки или перелета.
-            </p>
-            <p class="about-text">
-                Наша команда состоит из passionate travelers, которые сами постоянно в пути. Мы тестируем все советы на собственном опыте и делимся только тем, что действительно работает.
-            </p>
-        </div>
+      <div class="about-section">
+        <h2 class="section-title">О нас</h2>
+        <p class="about-text">
+          <span class="highlight">TravelB</span> - это сообщество путешественников, созданное для обмена опытом, знаниями и вдохновением. Мы верим, что каждый заслуживает незабываемых путешествий, независимо от бюджета или опыта.
+        </p>
+        <p class="about-text">Наша миссия - сделать планирование путешествий простым, доступным и увлекательным. Мы собираем проверенные лайфхаки, полезные советы и актуальную информацию от опытных путешественников со всего мира.</p>
+        <p class="about-text">
+          С <span class="highlight">2018 года</span> мы помогли тысячам людей открыть для себя новые направления, сэкономить на путешествиях и получить максимальное удовольствие от каждого похода, поездки или перелета.
+        </p>
+        <p class="about-text">Наша команда состоит из passionate travelers, которые сами постоянно в пути. Мы тестируем все советы на собственном опыте и делимся только тем, что действительно работает.</p>
+      </div>
 
-        <!-- Правая колонка: Контактная информация -->
-        <div class="contact-section">
-            <h2 class="section-title">Контактная информация</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-details">
-                        <h3>Наш офис</h3>
-                        <p>Москва, ул. Путешественников, 15<br>Бизнес-центр "Глобус", офис 304</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-details">
-                        <h3>Телефоны</h3>
-                        <p>+7 (495) 123-45-67<br>+7 (800) 123-45-67 (бесплатно по России)</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-details">
-                        <h3>Электронная почта</h3>
-                        <p>
-                            Общие вопросы: <a href="mailto:info@travelb.ru" class="contact-link">info@travelb.ru</a><br>
-                            Поддержка: <a href="mailto:support@travelb.ru" class="contact-link">support@travelb.ru</a><br>
-                            Сотрудничество: <a href="mailto:partners@travelb.ru" class="contact-link">partners@travelb.ru</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">🕒</div>
-                    <div class="contact-details">
-                        <h3>Режим работы</h3>
-                        <p>Пн-Пт: 9:00 - 19:00<br>Сб: 10:00 - 17:00<br>Вс: выходной</p>
-                    </div>
-                </div>
+      <div class="contact-section">
+        <h2 class="section-title">Контактная информация</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h3>Наш офис</h3>
+              <p>
+                Москва, ул. Путешественников, 15<br />Бизнес-центр "Глобус", офис 304
+              </p>
             </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h3>Телефоны</h3>
+              <p>
+                +7 (495) 123-45-67<br />+7 (800) 123-45-67 (бесплатно по России)
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h3>Электронная почта</h3>
+              <p>
+                Общие вопросы: <a href="mailto:info@travelb.ru" class="contact-link">info@travelb.ru</a><br />
+                Поддержка: <a href="mailto:support@travelb.ru" class="contact-link">support@travelb.ru</a><br />
+                Сотрудничество: <a href="mailto:partners@travelb.ru" class="contact-link">partners@travelb.ru</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h3>Режим работы</h3>
+              <p>
+                Пн-Пт: 9:00 - 19:00<br />Сб: 10:00 - 17:00<br />Вс: выходной
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- Карта -->
     <div class="map-section">
-        <h2 class="section-title" style="text-align: center; display: block;">Как нас найти</h2>
-        <div class="map-container">
-            <div class="map-placeholder">
-                <span><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5fbe4d661212f5f9306e8b01b6f55f32967815c44019555e1db15fc4c237787&amp;width=1200&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script></span>
-            </div>
+      <h2 class="section-title" style="text-align: center; display: block;">Как нас найти</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <span><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5fbe4d661212f5f9306e8b01b6f55f32967815c44019555e1db15fc4c237787&amp;width=1200&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script></span>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 {% endblock %}
