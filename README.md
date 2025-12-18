@@ -51,12 +51,23 @@ python manage.py loaddata perfect_backup.json
 python manage.py runserver
 ````
 
+## Пользоователи
 
+## Админка
+````
+Admin 
+````
+````
+123
+````
 
-
-
-
-
+## Тестовый пользователь
+````
+test1
+````
+````
+qSH-6KW-7rQ-5Fc
+````
 
 
 
