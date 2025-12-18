@@ -17,6 +17,9 @@
 
                 <!-- Навигационное меню -->
                 <ul class="nav-menu">
+                     <li class="nav-item">
+                        <a href="{% url 'home'  %}" class="nav-link">Главная</a>
+                    </li>
                     <li class="nav-item">
                         <a href="{% url 'news_home'  %}" class="nav-link">Статьи</a>
                     </li>
@@ -24,7 +27,7 @@
                         <a href="{% url 'about' %}" class="nav-link">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'connection' %}" class="nav-link">Обратная связь</a>
+                        <a href="{% url 'feedback' %}" class="nav-link">Обратная связь</a>
                     </li>
                     <!-- Выпадающее меню Лайфхаки -->
                     <li class="nav-item dropdown">

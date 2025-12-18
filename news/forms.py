@@ -1,5 +1,4 @@
 from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
-from django.utils import timezone
 from .models import Article
 
 
@@ -23,7 +22,7 @@ class ArticleForm(ModelForm):
             }),
             'date': DateTimeInput(attrs={
                 'class': 'form-control',
-                'type': 'datetime-local',  # HTML5 datetime picker
+                'type': 'datetime-local',
             }),
             'name': TextInput(attrs={
                 'class': 'form-control',
@@ -31,9 +30,3 @@ class ArticleForm(ModelForm):
             }),
         }
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Устанавливаем текущую дату по умолчанию
-        if not self.instance.pk:  # Только для новых статей
-            from django.utils import timezone
-            self.initial['date'] = timezone.now()
