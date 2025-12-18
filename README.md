@@ -25,11 +25,11 @@
 
 ## Технологии
 
-Backend: Django 
+Backend: **Django** 
 
-Frontend: HTML, CSS
+Frontend: **HTML, CSS**
 
-База данных: SQLite 
+База данных: **SQLite** 
 
 ## Запуск
 ````
