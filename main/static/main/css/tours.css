@@ -1,0 +1,508 @@
+
+        /* Сброс стилей и базовые настройки */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px 0 40px;
+        }
+
+        /* Заголовок страницы */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            border-radius: 16px;
+            color: white;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,0 L100,100 M100,0 L0,100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></svg>');
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Основной контент */
+        .content-section {
+            background-color: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #1a2980;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2ecc71;
+            display: inline-block;
+        }
+
+        .highlight {
+            color: #1a2980;
+            font-weight: 600;
+        }
+
+        .highlight-green {
+            color: #2ecc71;
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: #26d0ce;
+            font-weight: 600;
+        }
+
+        /* Советы и лайфхаки */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .tip-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border-left: 4px solid #26d0ce;
+        }
+
+        .tip-card:hover {
+            background-color: #f0f9ff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .tip-number {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .tip-card h3 {
+            font-size: 20px;
+            color: #1a2980;
+            margin-bottom: 12px;
+        }
+
+        .tip-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Сравнительная таблица */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: white;
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .comparison-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #f0f9ff;
+        }
+
+        .good {
+            color: #2ecc71;
+            font-weight: 600;
+        }
+
+        .bad {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Цитаты */
+        .quote {
+            background: linear-gradient(135deg, #f8f9fa, #e6f7ff);
+            border-left: 5px solid #26d0ce;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .quote-author {
+            text-align: right;
+            font-weight: 600;
+            color: #1a2980;
+            margin-top: 15px;
+            font-style: normal;
+        }
+
+        /* Инфографика */
+        .infographic {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e6f7ff);
+            border-radius: 16px;
+        }
+
+        .info-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .info-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 32px;
+            color: white;
+        }
+
+        .info-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a2980;
+            margin-bottom: 5px;
+        }
+
+        .info-text {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Рекомендации */
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .recommendation-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .recommendation-item:hover {
+            background-color: #f0f9ff;
+            transform: translateY(-3px);
+        }
+
+        .rec-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .rec-content h4 {
+            font-size: 18px;
+            color: #1a2980;
+            margin-bottom: 8px;
+        }
+
+        .rec-content p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Временная шкала */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #1a2980, #26d0ce);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: 40px;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -50px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -50px;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: #26d0ce;
+            margin-bottom: 10px;
+        }
+
+        /* Подзаголовки */
+        .subtitle {
+            font-size: 24px;
+            color: #1a2980;
+            margin: 30px 0 15px;
+            padding-left: 15px;
+            border-left: 4px solid #2ecc71;
+        }
+
+        /* Списки */
+        .content-section ul, .content-section ol {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+
+        .content-section li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .content-section li strong {
+            color: #1a2980;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 40px;
+            }
+
+            .tips-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+
+            .recommendations {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+
+            .infographic {
+                flex-wrap: wrap;
+            }
+
+            .info-item {
+                flex: 0 0 calc(50% - 15px);
+                margin-bottom: 20px;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+            }
+
+            .timeline-content {
+                margin-left: 70px !important;
+                margin-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-content::before {
+                left: -50px !important;
+                right: auto !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 30px 20px;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .page-header p {
+                font-size: 18px;
+            }
+
+            .content-section {
+                padding: 30px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .info-item {
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .content-section {
+                padding: 25px 20px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .subtitle {
+                font-size: 22px;
+            }
+
+            .tip-card {
+                padding: 20px;
+            }
+
+            .infographic {
+                padding: 20px;
+            }
+        }
+

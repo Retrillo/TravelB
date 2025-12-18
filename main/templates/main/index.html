@@ -1,0 +1,224 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+
+<!-- Кнопка создания статьи с href -->
+<div class="create-article-section">
+    <div class="create-content">
+        <h2>Есть о чем рассказать?</h2>
+        <p class="create-subtitle">Поделитесь своими путешествиями, советами и впечатлениями</p>
+
+        <a href="{% url 'create' %}" class="create-btn" id="createArticleBtn">
+            <span class="btn-icon">✍️</span>
+            <span class="btn-text">Создать статью</span>
+        </a>
+
+        <p class="create-hint">Нажмите, чтобы поделиться своей историей с сообществом путешественников</p>
+    </div>
+</div>
+
+<style>
+    /* Секция создания статьи */
+    .create-article-section {
+        background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
+        border-radius: 20px;
+        padding: 50px 40px;
+        text-align: center;
+        border: 2px solid rgba(26, 41, 128, 0.1);
+        position: relative;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    .create-article-section::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, transparent, rgba(26, 41, 128, 0.05), transparent);
+        transform: rotate(45deg);
+    }
+
+    .create-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #1a2980;
+        position: relative;
+        z-index: 1;
+    }
+
+    .create-subtitle {
+        font-size: 1.2rem;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Ссылка-кнопка создания статьи */
+    .create-btn {
+        background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+        color: white;
+        border: none;
+        padding: 18px 45px;
+        font-size: 1.3rem;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 25px rgba(26, 41, 128, 0.3);
+        text-decoration: none;
+    }
+
+    .create-btn:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(26, 41, 128, 0.4);
+        color: white;
+        text-decoration: none;
+    }
+
+    .create-btn:active {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    .btn-icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .create-btn:hover .btn-icon {
+        transform: rotate(15deg) scale(1.2);
+    }
+
+    .btn-text {
+        font-weight: 600;
+    }
+
+    .create-hint {
+        margin-top: 20px;
+        color: #777;
+        font-size: 1rem;
+        position: relative;
+        z-index: 1;
+        font-style: italic;
+    }
+
+    /* Альтернативный вариант с псевдокнопкой внутри ссылки */
+    .create-article-section-2 {
+        margin-top: 60px;
+        padding: 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .article-create-link {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    .article-create-btn {
+        background: white;
+        color: #667eea;
+        padding: 16px 40px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .article-create-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Вариант для статей в гриде */
+    .grid-create-section {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 40px;
+        margin-top: 20px;
+    }
+
+    .grid-create-link {
+        display: inline-block;
+        background: linear-gradient(135deg, #1a2980, #26d0ce);
+        color: white;
+        padding: 15px 35px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(26, 41, 128, 0.3);
+    }
+
+    .grid-create-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(26, 41, 128, 0.4);
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+        .create-article-section {
+            padding: 40px 25px;
+        }
+
+        .create-content h2 {
+            font-size: 2rem;
+        }
+
+        .create-subtitle {
+            font-size: 1.1rem;
+        }
+
+        .create-btn {
+            padding: 16px 35px;
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .create-content h2 {
+            font-size: 1.8rem;
+        }
+
+        .create-btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .create-hint {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<div class="article-create-page">
+    <h1>✍️ Новая статья</h1>
+    <p class="subtitle">Создайте свою статью для блога</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}
+        {{ form.anons }}
+        {{ form.full_text }}
+        {{ form.date }}
+        {{ form.name }}
+
+        {% if error %}
+        <div style="color: red; margin: 10px 0;">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <button type="submit">Добавить статью</button>
+    </form>
+</div>
+
+<style>
+    .article-create-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    h1 {
+        color: #1a2980;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea.form-control {
+        min-height: 200px;
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        background: #1a2980;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    button[type="submit"]:hover {
+        background: #26d0ce;
+    }
+</style>
+{% endblock %}

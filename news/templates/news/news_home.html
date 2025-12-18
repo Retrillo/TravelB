@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="news-page">
+    <!-- Заголовок страницы -->
+     <header class="page-header">
+            <h1>Статьи</h1>
+            <p>Актуальные статьи и обновления от путешественников.</p>
+        </header>
+
+    <!-- Контейнер новостей -->
+    <div class="news-container">
+        {% for el in news %}
+        <div class="news-item">
+            <h3 class="news-title">{{ el.title }}</h3>
+            <p class="news-anons">{{ el.anons }}</p>
+
+            <div class="news-meta">
+                <div class="news-date">{{ el.date }}</div>
+                <div class="news-author">{{ el.name }}</div>
+            </div>
+        </div>
+        {% empty %}
+        <!-- Сообщение если новостей нет -->
+        <div class="no-news">
+            <h3>Новостей пока нет</h3>
+            <p>Но скоро здесь появятся интересные статьи</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

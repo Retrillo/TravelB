@@ -1,0 +1,204 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Стили для навигационного меню */
+        .navbar {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            padding: 0 30px;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        /* Логотип */
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #fff, #e6f7ff);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #1a2980;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        /* Зеленая буква B в логотипе */
+        .logo-text .green-letter {
+            color: #2ecc71;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Основное меню */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Выпадающее меню для Лайфхаков */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle::after {
+            content: "▼";
+            font-size: 10px;
+            margin-left: 6px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        .dropdown:hover .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            min-width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f0f9ff;
+            color: #1a2980;
+            padding-left: 25px;
+        }
+
+        .dropdown-item:hover::before {
+            content: "→";
+            margin-right: 8px;
+            color: #26d0ce;
+        }
+
+        /* Кнопки входа/регистрации */
+        .auth-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-login, .btn-register {
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-login:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-register {
+            background-color: white;
+            color: #1a2980;
+        }
+
+        .btn-register:hover {
+            background-color: #f0f9ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+

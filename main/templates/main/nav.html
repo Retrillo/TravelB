@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигационное меню</title>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="{% url 'home'  %}" class="logo">
+                    <div class="logo-icon">T</div>
+                    <div class="logo-text">Travel<span class="green-letter">B</span></div>
+                </a>
+
+                <!-- Навигационное меню -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="{% url 'news_home'  %}" class="nav-link">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'about' %}" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'connection' %}" class="nav-link">Обратная связь</a>
+                    </li>
+                    <!-- Выпадающее меню Лайфхаки -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Лайфхаки</a>
+                        <div class="dropdown-menu">
+                            <a href="{% url 'hotels'  %}" class="dropdown-item">Отели</a>
+                            <a href="{% url 'tours'  %}" class="dropdown-item">Выгодные туры</a>
+                            <a href="{% url 'flights'  %}" class="dropdown-item">Авиабилеты</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Кнопки входа/регистрации -->
+                <div class="auth-links">
+                    <a href="#" class="btn-login">Вход</a>
+                    <a href="#" class="btn-register">Регистрация</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+</body>
+</html>
