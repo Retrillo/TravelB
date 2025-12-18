@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+  <div class="news-page">
+    <header class="page-header">
+      <h1>Статьи</h1>
+      <p>Актуальные статьи и обновления от путешественников.</p>
+    </header>
+
+    <div class="news-container-wrapper">
+      <div class="news-container">
+        {% for el in news %}
+          <div class="news-item">
+            <h3 class="news-title">{{ el.title }}</h3>
+            <p class="news-anons">{{ el.anons }}</p>
+
+            <div class="news-meta">
+              <div class="news-date">{{ el.date|date:'d.m.Y H:i' }}</div>
+              <div class="news-author">{{ el.name }}</div>
+            </div>
+
+            <div class="news-buttons">
+              <a href="{% url 'news-detail' el.id %}" class="news-btn">Читать статью</a>
+
+              {% if user.is_authenticated and user.username == el.name %}
+                <a href="{% url 'news-update' el.id %}" class="news-btn edit-btn">✏️ Редактировать</a>
+              {% endif %}
+            </div>
+          </div>
+        {% empty %}
+          <div class="no-news">
+            <h3>Новостей пока нет</h3>
+            <p>Но скоро здесь появятся интересные статьи</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="scroll-hint">Проведите в сторону для просмотра</div>
+  </div>
+{% endblock %}

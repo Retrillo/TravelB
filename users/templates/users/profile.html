@@ -1,0 +1,150 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+  Личный кабинет | TravelB
+{% endblock %}
+
+{% block content %}
+  <div class="profile-container">
+    <div class="profile-sidebar">
+      <div class="profile-header">
+        <div class="avatar-wrapper">
+          <div class="avatar-placeholder">{{ user.username|first|upper }}</div>
+          <div class="avatar-status"></div>
+        </div>
+        <h2 class="profile-username">{{ user.username }}</h2>
+        <p class="profile-role">Путешественник</p>
+      </div>
+
+      <div class="profile-nav-buttons">
+        <a href="{% url 'create' %}" class="nav-button create-btn-nav">
+          <span class="nav-button-icon">✍️</span>
+          <span class="nav-button-text">Создать статью</span>
+        </a>
+        <a href="{% url 'logout' %}" class="nav-button logout-btn-nav">
+          <span class="nav-button-icon">🚪</span>
+          <span class="nav-button-text">Выйти</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-card">
+        <div class="card-header">
+          <h3 class="card-title">Информация профиля</h3>
+          <div class="header-actions">
+            <a href="{% url 'edit_profile' %}" class="edit-profile-btn">
+              <span class="btn-icon">✏️</span>
+              Редактировать профиль
+            </a>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">
+                <span class="info-icon">👤</span>
+                Имя пользователя
+              </div>
+              <div class="info-value">{{ user.username }}</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <span class="info-icon">📧</span>
+                Email адрес
+              </div>
+              <div class="info-value">{{ user.email|default:'Не указан' }}</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <span class="info-icon">📅</span>
+                Дата регистрации
+              </div>
+              <div class="info-value">{{ user.date_joined|date:'d.m.Y' }}</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <span class="info-icon">🛡️</span>
+                Статус аккаунта
+              </div>
+              <div class="info-value">
+                <span class="status-badge active">Активен</span>
+              </div>
+            </div>
+
+            {% if user.first_name or user.last_name %}
+              <div class="info-item">
+                <div class="info-label">
+                  <span class="info-icon">👨‍👩‍👧‍👦</span>
+                  Полное имя
+                </div>
+                <div class="info-value">
+                  {% if user.first_name and user.last_name %}
+                    {{ user.first_name }} {{ user.last_name }}
+                  {% elif user.first_name %}
+                    {{ user.first_name }}
+                  {% else %}
+                    {{ user.last_name }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="create-article-section">
+        <div class="create-content">
+          <h2>Есть о чем рассказать?</h2>
+          <p class="create-subtitle">Поделитесь своими путешествиями, советами и впечатлениями</p>
+
+          <a href="{% url 'create' %}" class="create-btn-main">
+            <span class="btn-icon">✍️</span>
+            <span class="btn-text">Создать статью</span>
+          </a>
+
+          <p class="create-hint">Нажмите, чтобы поделиться своей историей с сообществом путешественников</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if messages %}
+    <div id="message-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        {% for message in messages %}
+          <p class="{{ message.tags }}">{{ message }}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('message-modal')
+      const closeBtn = document.getElementById('close-modal')
+      
+      // Показ модального окна с анимацией
+      setTimeout(() => {
+        modal.style.display = 'flex'
+      }, 100)
+      
+      // Закрытие модального окна по кнопке
+      closeBtn.onclick = function () {
+        modal.style.display = 'none'
+        window.location.href = "{% url 'profile' %}" // редирект после закрытия
+      }
+      
+      // Закрытие при клике вне окна
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none'
+          window.location.href = "{% url 'profile' %}"
+        }
+      }
+    </script>
+  {% endif %}
+{% endblock %}

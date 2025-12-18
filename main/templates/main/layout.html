@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="{% static 'main/css/nav.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/hotels.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/tours.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/flights.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}" />
+
+    <!-- Стили новостей -->
+    <link rel="stylesheet" href="{% static 'news/css/news_home.css' %}" />
+    <link rel="stylesheet" href="{% static 'news/css/details_view.css' %}" />
+    <link rel="stylesheet" href="{% static 'news/css/create.css' %}" />
+
+    <!-- Стили пользователей -->
+    <link rel="stylesheet" href="{% static 'users/css/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/profile.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/profile_edit.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/register.css' %}" />
+
+    <!-- Стили обратной связи -->
+    <link rel="stylesheet" href="{% static 'feedback/css/feedback.css' %}" />
+    <link rel="stylesheet" href="{% static 'feedback/css/success.css' %}" />
+
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+  </head>
+  <body>
+    <nav>
+      {% include 'main/nav.html' %}
+    </nav>
+
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <footer>
+      {% include 'main/footer.html' %}
+    </footer>
+  </body>
+</html>
