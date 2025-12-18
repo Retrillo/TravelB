@@ -1,0 +1,445 @@
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.hero-section {
+    background: linear-gradient(135deg,
+    rgba(248, 249, 255, 0.95) 0%,
+    rgba(238, 242, 255, 0.9) 100%);
+    border-radius: 25px;
+    padding: 60px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(26, 41, 128, 0.08);
+    box-shadow: 0 10px 40px rgba(26, 41, 128, 0.05);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(26, 41, 128, 0.03) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    color: #1a2980;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.decorative-line {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #1a2980, #26d0ce);
+    margin: 30px auto;
+    border-radius: 3px;
+    opacity: 0.6;
+}
+
+.hero-text {
+    text-align: left;
+    color: #444;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.hero-text p::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #26d0ce;
+    opacity: 0.5;
+}
+
+.travel-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.travel-icons .icon {
+    font-size: 2.5rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.travel-icons .icon:nth-child(2) { animation-delay: 0.5s; }
+.travel-icons .icon:nth-child(3) { animation-delay: 1s; }
+.travel-icons .icon:nth-child(4) { animation-delay: 1.5s; }
+.travel-icons .icon:nth-child(5) { animation-delay: 2s; }
+
+
+.quote-block {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    color: white;
+    box-shadow:
+        0 10px 30px rgba(102, 126, 234, 0.2),
+        0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.quote-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quote-mark {
+    font-size: 8rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.15);
+    margin-bottom: -40px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 300;
+    position: relative;
+    padding: 0 20px;
+}
+
+
+.quote-author {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.quote-author::before {
+    content: '—';
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+
+.poetic-section {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid rgba(26, 41, 128, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.poetic-title {
+    font-size: 2rem;
+    color: #1a2980;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.poetic-lines {
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poetic-lines p {
+    margin: 5px 0;
+}
+
+.call-to-action {
+    background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
+    border-radius: 25px;
+    padding: 70px 40px;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px dashed rgba(26, 41, 128, 0.2);
+    position: relative;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.2rem;
+    color: #1a2980;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    color: white;
+    padding: 20px 45px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(26, 41, 128, 0.3);
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(26, 41, 128, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.cta-icon {
+    font-size: 1.5rem;
+}
+
+.cta-hint {
+    color: #777;
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.decorative-footer {
+    background: #f8f9ff;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 60px auto 0;
+    text-align: center;
+    border-top: 3px solid #1a2980;
+}
+
+.footer-content p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 30px;
+        margin: 20px auto;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .hero-text p {
+        padding-left: 15px;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+    }
+
+    .quote-block,
+    .poetic-section,
+    .call-to-action {
+        padding: 40px 30px;
+        margin: 30px auto;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        padding: 16px 35px;
+        font-size: 1.1rem;
+        min-width: 250px;
+    }
+
+    .travel-icons .icon {
+        font-size: 2rem;
+    }
+
+    .travel-icons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section,
+    .quote-block,
+    .poetic-section,
+    .call-to-action {
+        padding: 30px 20px;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .quote-text {
+        font-size: 1.3rem;
+    }
+
+    .quote-mark {
+        font-size: 4rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        min-width: auto;
+        padding: 16px 25px;
+    }
+
+    .travel-icons {
+        gap: 15px;
+    }
+
+    .travel-icons .icon {
+        font-size: 1.8rem;
+    }
+
+    .decorative-footer {
+        padding: 30px 20px;
+        margin: 40px auto 0;
+    }
+
+    .footer-icons {
+        gap: 15px;
+        font-size: 1.3rem;
+    }
+
+    .poetic-title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .poetic-lines {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .cta-title {
+        font-size: 1.5rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 14px 20px;
+    }
+
+    .travel-icons {
+        gap: 10px;
+    }
+
+    .travel-icons .icon {
+        font-size: 1.5rem;
+    }
+}

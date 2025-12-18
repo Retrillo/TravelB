@@ -1,0 +1,116 @@
+.edit-profile-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.edit-profile-card {
+    width: 100%;
+    max-width: 720px;
+    background: white;
+    border-radius: 22px;
+    padding: 35px 40px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.edit-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.edit-form p {
+    margin-bottom: 18px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.edit-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.15);
+    outline: none;
+}
+
+.readonly-field {
+    margin-bottom: 18px;
+}
+
+.readonly-value {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.field-hint {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+    margin: 30px 0;
+}
+
+.save-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(46,204,113,0.3);
+}

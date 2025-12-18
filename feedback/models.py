@@ -1,9 +1,5 @@
 from django.db import models
 
-# Create your models here.
-# feedback/models.py или main/models.py
-from django.db import models
-
 
 class Feedback(models.Model):
     CATEGORY_CHOICES = [

@@ -1,4 +1,3 @@
-# feedback/forms.py или main/forms.py
 from django import forms
 from .models import Feedback
 
@@ -52,7 +51,6 @@ class FeedbackForm(forms.ModelForm):
 
     def clean_phone(self):
         phone = self.cleaned_data.get('phone', '')
-        # Простая валидация телефона
         if phone and not any(char.isdigit() for char in phone):
             raise forms.ValidationError("Введите корректный номер телефона")
         return phone

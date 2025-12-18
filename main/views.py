@@ -16,8 +16,6 @@ def tours(request):
 def flights(request):
     return render(request , "main/flights.html")
 
-def connection(request):
-    return render(request , "main/connection.html")
 
 def bag(request):
     return render(request , "main/bag.html")
