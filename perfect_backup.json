@@ -1,0 +1,226 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$lukzq6LG2XMbPrpT1iN7L7$C6ybbtINRVdPWY9iXla2oNiat/kQf7yHYExDR9AptQQ=",
+    "last_login": "2025-12-18T14:19:06.511Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-17T06:08:30.411Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$j7SFbq47UUyPu8AwdRGax7$RfsmVu0J4t3YTS9+qAS2PC7qQC3DxfLdr345UVA7NcA=",
+    "last_login": "2025-12-18T15:02:29.853Z",
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "123@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-18T11:06:17.166Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "029ahqw02vy8fmv3rd0lgyragghkn64t",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vVqnU:qe7I1TIiH5vrJeM-aASeYxauAkneqeJX7JCvYrIwU9I",
+    "expire_date": "2025-12-31T12:38:28.518Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1jdbchjnulpv8q727hgwz80nas4cbtzg",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_C2hA-pYBL956BvA-VqqFJaVfGuytJF7qdmcxLJNi3kvaW1zSzOAsjTr8MgR65dsF3qLdF0lK3dUbZE3nYJq8L5-flaP8GBVrpW-eyD9ZkZKsGo9mToUkxhykE79So48jO4vBtIEYiFyAC2KwxemYU7w_Rfzff:1vVpfs:Mx4Arj790ZVptAAkWcyo8Sqm-miB7Qkh3xkfeOs0doY",
+    "expire_date": "2025-12-31T11:26:32.471Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2h76yry95zhw2vzjb3dc3zlvbkf95lb3",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vW7E2:05p8L9UT5rt19EdMNQShe95sSP1lV8W3jApkfyErBZg",
+    "expire_date": "2026-01-01T06:10:58.322Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3f3maf996aen29ifwe9bs1y4j9b7b94a",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWC0y:t0ahTcC8xWnEwnhCfcFJjPYytn4gCxkPC32Dy5IfqDQ",
+    "expire_date": "2026-01-01T11:17:48.927Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7cidwujhzrz4s842yg5iwx4po7chay1l",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vVqm8:-y_NMlOurmJ5QmwOrjdt2bKsdreNnB1QVwEoBpacP5E",
+    "expire_date": "2025-12-31T12:37:04.386Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "94ztv69cgeg0q89slbrj1usapfhmv445",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vVtD5:hJRRyVO4sYKgxKJ3Rnhb4uULnDmW6lcgobA041EmFi4",
+    "expire_date": "2025-12-31T15:13:03.690Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lyuv9brmjonp26qw47p25imogm4g8m2w",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWC6l:qVwxCSC2yxDyBbBWwuxrNpSZgvh5TfB04VJ8vuRrzQg",
+    "expire_date": "2026-01-01T11:23:47.947Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m5fr5y26c0tirelkbksflzhns2amve8q",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEMpTxcuvcbyAwMUjU0Ke3K-O_apAvd3nPOfYmI21rj1nmJUxZnMYjT70aYHtx2kO_YbrNMc1uXieSuyIN2eZ0zPy-H-3dQsddv7clYLuCTUZqt0mC0o5CKAc3KomeLkMkRwhhCdprdAJRL0alAMaMR7w_bmzf9:1vVsYi:UN_z9pSzK-Q5_dsGiodRsxsexPPpl0pfB7paZjVpc2w",
+    "expire_date": "2025-12-31T14:31:20.447Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nwz893anvdd4w7e5cf4qhfrra929t9sj",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vVtD4:M1Rd-ju2zCFXnicExSJqQny8FB2B_9tZz3G46uf87bM",
+    "expire_date": "2025-12-31T15:13:02.695Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pdxy6tui8dzc5tpqzj5ypapw0obhjkn6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWBrg:Z-vWoRFqW0QkCOrjbikxaOV6APXpI4xQJrf-FseiXCg",
+    "expire_date": "2026-01-01T11:08:12.941Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "quo41neqdy89gkk7iyml9zdlzk342mgv",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vVqoa:htaplbf56qLdWXTIXCGyG_6Z4ox_bkl62t1EKff_eD4",
+    "expire_date": "2025-12-31T12:39:36.011Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sfxqcke54pccu66ev3oeomma713oudd1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWDaA:WuzRguj4cnRsvSfpXPRwzZrlWv_9deYpkBGPBM08_hU",
+    "expire_date": "2026-01-01T12:58:14.847Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "skyzf1rgu6yjlk5knhne6070r3ovjxhl",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQBf-FsyEUCiwevfcbyAKLVA0kpT0Z_92Q9KDXNzPvzTwee_FHp82viV2ZYZffLWB8Uh0gPbDeG4-t7tsa-FD4STtfWqLX7XT_Dgr2MmoFRkYBEMGlHGfUxqksiZwmlQQQCsokRdakQVs7BTA2ygl1QJwDsM8X8S84Sw:1vW9Oi:H1WCmigGjRumCiruQ6GaMTq9MLuraFkXdJIQE9I_2XQ",
+    "expire_date": "2026-01-01T08:30:08.684Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w7vsfjz0j0x1p4l4id445h6z640l1tu3",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrb2JKes5grXdtHECOFCcV4u4QKQW0b2beS0Tc1hq3npc4sTiLUZx-t4T0yG0HfMd2myXNbV2mJHdFHrTL68z5eTncv4OKvX5r641FFTQnr02CgkoT2cEjBPJcBiIcfQDOlDUXCw5cZuWdM8TWgBbvD-lIN_A:1vWFWP:rpmMEdICHMDtNzfUxZ01D1xbH-fHcAr9Fv7F9mtZJCk",
+    "expire_date": "2026-01-01T15:02:29.859Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xty9ls23cvpowdsvoaoxf1xrtg5wmtyk",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWBqB:W-MVNq6OZR3x_5EN8d26RAKzbpEouN6-4l1uUqBq-oY",
+    "expire_date": "2026-01-01T11:06:39.900Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yvpnvfx3iuw1ryqsfkyvrqc86z1xd6le",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2svGHkp4zWGvvggPIkeKkQtwdIqWA9s3Me6lE61LT2mVOI6uTsurwu2UqD2kb4Du126TL1JZ5zHpT9E67vkwsz_Pu_h1U6vVbG3-VAaCIZBYHlhBNdIENRG9NOTJkRoMSC_gBhX0gMjZYQAEK2an3B9-3N48:1vWE95:kpvwG9FZP6zO_24wTqSErCNGWftWTxzLFpvO9GRnRrA",
+    "expire_date": "2026-01-01T13:34:19.561Z"
+  }
+},
+{
+  "model": "news.article",
+  "pk": 14,
+  "fields": {
+    "title": "Почему кошки мурлыкают?",
+    "anons": "Тайны мурлыканья: почему кошки лечат себя вибрациями Вы думали, что кошки мурлычут только от удовольствия? Оказывается, их мурлыканье — это скрытый механизм самовосстановления, способный заживлять кости и снимать стресс. Узнайте, как эти звуки помог",
+    "full_text": "Кошачье мурлыканье - это не только признак удовольствия. Исследования показывают, что кошки мурлычут, чтобы выражать целый спектр эмоций: от спокойствия и удовлетворения до стресса или боли. Звук мурлыкания возникает за счёт быстрых колебаний гортани и диафрагмы на частоте 25-150 Гц. Интересно, что такие вибрации могут способствовать заживлению костей и регенерации тканей. Возможно, мурлыканье - это древний механизм самолечения, который помогает кошкам восстанавливаться после травм и даже снижает риск остеопороза. Так что, когда ваш питомец мурлычет, он не просто общается - он, возможно, \"лечит\" себя и вас.",
+    "date": "2025-12-18T10:04:00Z",
+    "name": "test1"
+  }
+},
+{
+  "model": "news.article",
+  "pk": 15,
+  "fields": {
+    "title": "Криптовалюты: больше, чем биткоин",
+    "anons": "Криптовалюты после биткоина: что изменилось за 10 лет? Биткоин был только началом. Сегодня мир криптовалют — это смарт-контракты, цифровое искусство и «интернет блокчейнов». Читайте, как Ethereum, Solana и Polkadot создают будущее без банков и поср",
+    "full_text": "Когда говорят о криптовалютах, первым делом вспоминают биткоин. Но за последние 10 лет появились тысячи альтернативных монет, каждая со своей философией. Ethereum, например, предлагает платформу для смарт-контрактов - самоисполняющихся программ, которые работают без посредников. Solana делает ставку на скорость и низкие комиссии, а Polkadot создаёт \"интернет блокчейнов\", позволяя разным сетям обмениваться данными. Эти технологии меняют представление о финансах, праве и даже цифровом искусстве (через NFT). Будущее криптовалют - не в замене денег, а в создании децентрализованной инфраструктуры для нового интернета.",
+    "date": "2025-12-18T12:32:00Z",
+    "name": "test1"
+  }
+},
+{
+  "model": "news.article",
+  "pk": 16,
+  "fields": {
+    "title": "Техника «Помидора»: как работать эффективнее",
+    "anons": "Метод «Помидора»: как превратить время в союзника и перестать откладывать дела на потом",
+    "full_text": "Введение: почему мы всё откладываем?\r\nВ эпоху многозадачности, уведомлений и бесконечных потоков информации наш мозг часто сдаётся под напором дедлайнов. Мы тонем в списках задач, но к концу дня понимаем, что сделали мало, а устали - как будто работали без перерыва. Знакомо? Возможно, вам просто не хватает системы, которая превратит хаос в порядок. Одна из таких систем - метод \"Помидора\" - проста, как апельсин, и эффективна, как швейцарские часы.\r\n\r\n1. Что такое метод \"Помидора\" и откуда взялось это название?\r\nМетод \"Помидора\" (от итал. pomodoro - \"помидор\") - это техника тайм-менеджмента, разработанная итальянским студентом Франческо Чирилло в конце 1980-х. Всё началось с обычного кухонного таймера в форме помидора, который Чирилло использовал, чтобы разбивать учебные сессии на короткие интервалы. Он обнаружил, что 25 минут - это идеальный отрезок времени, за который можно сохранить концентрацию, не чувствуя усталости.\r\n\r\nОсновные принципы метода:\r\n\r\nРабота делится на отрезки по 25 минут (\"помидоры\").\r\n\r\nПосле каждого \"помидора\" - перерыв 5 минут.\r\n\r\nПосле четырёх \"помидоров\" - длинный перерыв 15-30 минут.\r\n\r\n2. Почему это работает? Наука за кухонным таймером\r\nМетод \"Помидора\" - это не просто лайфхак, а система, основанная на особенностях работы нашего мозга.\r\n\r\nФокус вместо многозадачности. Исследования показывают, что многозадачность снижает продуктивность на 40%. \"Помидор\" приучает мозг концентрироваться на одной задаче.\r\n\r\nБорьба с прокрастинацией. 25 минут - это не страшно. Даже самая неприятная задача кажется выполнимой, если знаешь, что скоро будет перерыв.\r\n\r\nРитм и восстановление. Короткие перерывы позволяют мозгу \"перезагрузиться\" и избежать эмоционального выгорания. Во время пауз лучше встать, пройтись, выпить воды - но не залипать в соцсетях!\r\n\r\n3. Как внедрить метод \"Помидора\" в свою жизнь: пошаговая инструкция\r\nШаг 1: Подготовка\r\nСоставьте список задач на день.\r\n\r\nВыберите задачу, с которой начнёте.\r\n\r\nУберите все отвлекающие факторы: закройте лишние вкладки, отключите уведомления, предупредите коллег или домочадцев.\r\n\r\nШаг 2: Запуск первого \"помидора\"\r\nУстановите таймер на 25 минут.\r\n\r\nРаботайте, пока таймер не прозвенит. Никаких пауз \"на минуточку\"!\r\n\r\nЕсли в голову пришла срочная мысль, запишите её на листе и вернитесь к работе.\r\n\r\nШаг 3: Отдых и циклы\r\nПосле звонка - 5 минут отдыха. Встаньте, потянитесь, посмотрите в окно.\r\n\r\nПосле четырёх \"помидоров\" - отдых 15-30 минут.\r\n\r\nВ конце дня проанализируйте, сколько \"помидоров\" ушло на каждую задачу. Это поможет лучше планировать время в будущем.\r\n\r\n4. Лайфхаки для продвинутых \"помидорщиков\"\r\nЕсли задача занимает больше 5-7 \"помидоров\", разбейте её на подзадачи. Например, \"написать отчёт\" -> \"собрать данные\", \"сделать структуру\", \"написать введение\".\r\n\r\nИспользуйте приложения: Focus To-Do, Pomodoro Tracker, Be Focused или стандартный таймер в телефоне.\r\n\r\nЭкспериментируйте с длительностью. Некоторым людям комфортнее работать 50 минут с 10-минутным перерывом. Метод можно адаптировать!\r\n\r\nОбъединяйте \"помидоры\" с другими методиками: например, Getting Things Done (GTD) для планирования или Eat That Frog для решения самых сложных задач с утра.\r\n\r\n5. Кому подходит метод \"Помидора\"?\r\nФрилансерам, которые работают из дома и борются с дисциплиной.\r\n\r\nСтудентам для подготовки к экзаменам и написания работ.\r\n\r\nОфисным сотрудникам, которым нужно сконцентрироваться в условиях открытого пространства.\r\n\r\nТворческим людям, страдающим от \"страха чистого листа\".\r\n\r\nВсем, кто чувствует, что время утекает сквозь пальцы.\r\n\r\n6. А если не получается? Частые ошибки и как их избежать\r\n\"Я постоянно отвлекаюсь во время „помидора“\". Начинайте с малого - попробуйте 15 минут работы. Постепенно увеличивайте интервал.\r\n\r\n\"Перерывы сбивают меня с рабочего ритма\". Используйте перерывы правильно - не для соцсетей, а для физического отдыха.\r\n\r\n\"Я забываю отслеживать „помидоры“\". Ведите простой учёт в блокноте или таблице. Визуальный прогресс мотивирует!\r\n\r\nЗаключение: 25 минут, которые изменят ваш день\r\nМетод \"Помидора\" - это не просто таймер на телефоне. Это философия уважения к своему времени и вниманию. Он учит не делать больше, а делать осознаннее. Попробуйте провести завтрашний день в ритме \"помидоров\" - и вы заметите, что успеваете не только работать, но и жить.",
+    "date": "2025-12-18T10:09:00Z",
+    "name": "admin"
+  }
+},
+{
+  "model": "news.article",
+  "pk": 17,
+  "fields": {
+    "title": "Интересная статья",
+    "anons": "Интересная статья",
+    "full_text": "Интересная статья",
+    "date": "2025-12-18T15:07:00Z",
+    "name": "test"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-12-18T14:19:29.470Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "news",
+      "article"
+    ],
+    "object_id": "15",
+    "object_repr": "Криптовалюты: больше, чем биткоин",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043d\\u043e\\u043d\\u0441\"]}}]"
+  }
+}
+]
