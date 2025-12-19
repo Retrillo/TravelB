@@ -39,7 +39,7 @@ python manage.py loaddata perfect_backup.json
 python manage.py runserver
 ````
 
-## Пользоователи
+## Пользователи
 Что бы попасть в админ-панель адрес/admin
 ## Пример
 ````
